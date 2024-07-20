@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'quaries.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="row">
+            <div class="logo">Lawn and Yard Services</div>
+            <div class="logo-black">Lawn and Yard Services</div>
+            <ul class="main-nav js--main-nav">
+              <li><a href="#about-us">About us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a class="mobile-nav-icon js--nav-icon"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </div>
+        </nav>
+        <div class="hero-text-box">
+          <h1>Your local Neighborhood landscaper.</h1>
+          <a class="btn btn-full js--scroll-to-contact" href="#">Contact Now</a>
+          <a class="btn btn-ghost btn-ghost_media js--scroll-to-specials" href="#"
+            >See our Current Specials</a
+          >
+        </div>
+      </header>
+
+      {% block content %}
+      hiiii...........
+      {% endblock %}
+
+</body>
+</html>

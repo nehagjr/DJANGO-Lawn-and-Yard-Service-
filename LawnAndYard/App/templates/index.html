@@ -3,78 +3,218 @@
 {% block content %}
 
 
-
-<div class="hero-text-box">
-    <div class="row1">
-        <div class="col-12"><p class="main">Your local Neighborhood landscaper.</p></div>
-        <div class="col">
-           <a class="btn" href="#">Contact Now</a>
-           <a class="btn1" href="#">See our Current Specials</a>
-        </div>
+<!-- about-us section -->
+<section class="section-about-us js--section-about-us" id="about-us">
+  <div class="row">
+    <h2>licensed &mdash; insured &mdash; bonded</h2>
+    <p class="long-copy">
+      Hello, we're Lawn and Yard Services, your local neighborhood
+      landscaping service. We know you're always busy with no time for
+      yard-care. So let us take care of that, we're really good at it, we
+      promise!
+    </p>
+  </div>
+  <div class="row js--wp-1">
+    <div class="col span-1-of-4 box">
+      <ion-icon
+        name="calendar-outline"
+        alt="calendar icon"
+        class="about-us-icon"
+      ></ion-icon>
+      <h3>Flexible Scheduling</h3>
+      <p>
+        Never mow again! We really mean that. We are available 7-days a
+        week, minus major holidays. On-call service available.
+      </p>
     </div>
-</div>
+    <div class="col span-1-of-4 box">
+      <ion-icon
+        name="home-outline"
+        alt="home icon"
+        class="about-us-icon"
+      ></ion-icon>
+      <h3>Yard Services</h3>
+      <p>
+        Full-service yard care. Including weeding, mowing, edging and
+        cleanup. We also offer fertilizing, re-seeding and moss control.
+      </p>
+    </div>
+    <div class="col span-1-of-4 box">
+      <ion-icon
+        name="leaf-outline"
+        alt="leaf icon"
+        class="about-us-icon"
+      ></ion-icon>
+      <h3>Tree Services</h3>
+      <p>
+        Tree services include trimming, pruning, topping and shaping.
+        Shrubs, bushes, hedges and ornamentals included. Blackberry removal.
+      </p>
+    </div>
+    <div class="col span-1-of-4 box">
+      <ion-icon
+        name="earth-outline"
+        alt="earth icon"
+        class="about-us-icon"
+      ></ion-icon>
+      <h3>Earth Friendly</h3>
+      <p>
+        We use only all-natural organic fertilizers, no harsh chemicals. All
+        yard waste is responsibly composted. Nothing goes into a landfill.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <!-- about-us section -->
-    <section class="section-about-us js--section-about-us" id="about-us">
-        <div class="row">
-          <h2>licensed &mdash; insured &mdash; bonded</h2>
-          <p class="long-copy">
-            Hello, we're Lawn and Yard Services, your local neighborhood
-            landscaping service. We know you're always busy with no time for
-            yard-care. So let us take care of that, we're really good at it, we
-            promise!
-          </p>
+<!-- testimonial section -->             
+<section class="section-testimonials">
+  <div class="row">
+    <h2>Our customers can't live without us</h2>
+  </div>
+  <div class="row">
+    <div class="col span-1-of-3">
+      <blockquote>
+        Always meticulous work! I just launched a startup which leaves me
+        with no time for yard work, so Lawn and Yard Services is a
+        life-saver. Now that I got used to it, I couldn't bear having to mow
+        my own lawn again!
+      </blockquote>
+      <p class="customer">
+        <img src="{% static 'images/47.jpg' %}" alt="Alberto Duncan" />Alberto
+        Duncan
+      </p>
+    </div>
+    <div class="col span-1-of-3">
+      <blockquote>
+        I grow my own vegetables and flowers so its great not to have to
+        worry about keeping the hedges trimmed and the trees pruned as well.
+        Lawn and Yard Services takes care of all the maintenance so I can
+        focus on what I love!
+      </blockquote>
+      <p class="customer">
+        <img src="{% static 'images/81.jpg' %}" alt="Eva Turner" />Eva Turner
+      </p>
+    </div>
+    <div class="col span-1-of-3">
+      <blockquote>
+        My neighborhood HOA has very strict rules regarding the appearance
+        of residents' yards. Lawn and Yard Services keeps my yard looking
+        great and many of my neighbors have started using them as well. Keep
+        up the great work!
+      </blockquote>
+      <p class="customer">
+        <img src="{% static 'images/30.jpg' %}" alt="Carolyn Green" />Carolyn Green
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- specials section -->
+<section class="section-specials js--section-specials" id="specials">
+  <div class="row">
+    <h2>Our current specials</h2>
+  </div>
+  <div class="row">
+    <div class="col span-1-of-3">
+      <div class="plan-box js--wp-2">
+        <div>
+          <h3>monthly mowing plan</h3>
+          <p class="plan-price">$60<span> and up</span></p>
+          <p class="plan-price-meal">For a normal sized yard</p>
         </div>
-        <div class="row js--wp-1">
-          <div class="col span-1-of-4 box">
-            <ion-icon
-              name="calendar-outline"
-              alt="calendar icon"
-              class="about-us-icon"
-            ></ion-icon>
-            <h3>Flexible Scheduling</h3>
-            <p>
-              Never mow again! We really mean that. We are available 7-days a
-              week, minus major holidays. On-call service available.
-            </p>
-          </div>
-          <div class="col span-1-of-4 box">
-            <ion-icon
-              name="home-outline"
-              alt="home icon"
-              class="about-us-icon"
-            ></ion-icon>
-            <h3>Yard Services</h3>
-            <p>
-              Full-service yard care. Including weeding, mowing, edging and
-              cleanup. We also offer fertilizing, re-seeding and moss control.
-            </p>
-          </div>
-          <div class="col span-1-of-4 box">
-            <ion-icon
-              name="leaf-outline"
-              alt="leaf icon"
-              class="about-us-icon"
-            ></ion-icon>
-            <h3>Tree Services</h3>
-            <p>
-              Tree services include trimming, pruning, topping and shaping.
-              Shrubs, bushes, hedges and ornamentals included. Blackberry removal.
-            </p>
-          </div>
-          <div class="col span-1-of-4 box">
-            <ion-icon
-              name="earth-outline"
-              alt="earth icon"
-              class="about-us-icon"
-            ></ion-icon>
-            <h3>Earth Friendly</h3>
-            <p>
-              We use only all-natural organic fertilizers, no harsh chemicals. All
-              yard waste is responsibly composted. Nothing goes into a landfill.
-            </p>
-          </div>
+        <div>
+          <ul>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon>Twice
+              per month
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon>Flex
+              Scheduling
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon
+              >Edging Included
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon>Yard
+              Debris Haulaway
+            </li>
+          </ul>
         </div>
-      </section>
+        <div>
+          <a href="#contact" class="btn btn-full">Get Free Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col span-1-of-3">
+      <div class="plan-box js--wp-3">
+        <div>
+          <h3>Lawn Aeration</h3>
+          <p class="plan-price">$149 <span>and up</span></p>
+          <p class="plan-price-meal">For a normal sized yard</p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon
+              >Increases access to nutrients
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon
+              >Better Lawn Growth
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon
+              >Reduces Compaction
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon
+              >Prevents Pests and Disease
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#contact" class="btn btn-ghost">Get Free Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col span-1-of-3">
+      <div class="plan-box js--wp-4">
+        <div>
+          <h3>Shrub Trimming</h3>
+          <p class="plan-price">$99 <span></span></p>
+          <p class="plan-price-meal">&nbsp;</p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon>Up to
+              1 Hour of Trimming
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon
+              >Debris Removal
+            </li>
+            <li>
+              <ion-icon name="checkmark" class="plan-icons"></ion-icon
+              >Ornamentals Not Included
+            </li>
+            <li>
+              <ion-icon name="close" class="plan-icons"></ion-icon>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#contact" class="btn btn-ghost">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact form section -->
 
 {% endblock %} 

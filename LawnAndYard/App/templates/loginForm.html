@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Login Form</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    <div class="login-form">
+        <h1>Login Form</h1>
+        <div class="form-container">
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password" class="show-password">Show Password</label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="keep-signed-in">
+                    <label for="keep-signed-in" class="keep-signed-in">Keep Me Signed In</label>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

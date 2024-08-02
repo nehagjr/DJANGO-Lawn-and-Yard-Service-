@@ -1,14 +1,9 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Login Form</title>
-    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
-</head>
 <body>
+   <div class="wrapper">
     <div class="login-form">
         <h1>Login Form</h1>
         <div class="form-container">
@@ -32,5 +27,6 @@
             </form>
         </div>
     </div>
-</body>
-</html>
+   </div>
+
+{% endblock %}

@@ -1,297 +1,271 @@
- <!-- https://lucerolnc.com/ -->
-  {% load static %}
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grandcoffee</title>
-    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<body>
-    <div id="wrapper">
-        <!--This is header part-->
-        <div id="header">
-            <div id="toplogo">NW Yard</div>
-            <div id="topmenu">
-                <ul>
-                    <li><a href="#index" style="color: rgb(255, 140, 46)">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contectus">Contect Us</a></li>
-                    <img src="images/search-icon.png" alt="" height="22px">
-                </ul>
-            </div>
+    <title>YARD SERVICES</title>
+  </head>
+  <body id="home">
+    <nav id="navbar-example2" class="navbar fixed-top navbar-light bg-light px-3">
+        <h1 style="color:rgb(87, 40, 6)">YARD SERVICES</h1>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Logout</a>
+          </li>
+         
+        </ul>
+      </nav>
+      <br>
+      <br>
+      <br>  
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/house.jpg' %}" class="d-block w-100" alt="..." width="1000px" height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/10004s.jpeg' %}" class="d-block w-100" alt="..." width="1000px" height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/10003s.jpeg' %}" class="d-block w-100" alt="..." width="1000px" height="600px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <div id="Service"></div>
 
-        <!--HOME SECTION-->
-
-        <div id="banner">
-            <div id="banner_data">
-                
-                <div id="data2">
-                    <p
-                        style="font-size: 65px; color: white; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                        Nw Yard Services</p>
-                </div>
-                <div>
-                    <p style="font-size: 20px; color: white;">coffee has played a far more important role in the world
-                        than most people <br>
-                        realize. Of course, it’s one of the most popular beverages in <br>
-                        disparate cultures around the globe. </p>
-                </div>
-                <div class="button"><button><a href="index.html">Learn More</a></button> </div>
-                <div id="arrow">
-                    <div class="aro"> < </div>
-                            <div class="aro"> > </div>
-                    </div>
-                </div>
+      <center><h1> WELCOME TO LAWN AND YARD SERVICES</h1></center>
+      <div class="card-group" >
+        <div class="card" style="margin: 10px;">
+          <img src="{% static 'images/10003s.jpeg' %}" class="card-img-top" alt="..." width="250px" height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card" style="margin: 10px;">
+          <img src="{% static 'images/10004s.jpeg' %}" class="card-img-top" alt="..." width="250px" height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card" style="margin: 10px;">
+          <img src="{% static 'images/100044.jpg' %}" class="card-img-top" alt="..." width="250px" height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card-group">
+        <div class="card" style="margin: 10px;">
+          <img src="{% static 'images/10001.jpg' %}" class="card-img-top" alt="..." width="250px" height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card" style="margin: 10px;">
+          <img src="{% static 'images/10002.jpg' %}" class="card-img-top" alt="..." width="250px" height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card" style="margin: 10px;">
+          <img src="{% static 'images/10005.jpg' %}" class="card-img-top" alt="..." width="250px" height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/100055.jpg' %}" class="img-fluid rounded-start" alt="..." width="650px" height="400px">
+          </div>
+          <div class="col-md-8" id="about">
+            <div class="card-body">
+              <h5 class="card-title" >ABOUT LAWN AND YARD SERVICES</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
             </div>
-        </div>    
-
-            <!--ABOUT SECTION-->
-
-            <div id="about">
-                <div id="about_data">
-                    <div id="dataA">
-                        <p
-                            style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                            ABOUT US</p>
-                        <p style="font-size: 19px; color: grey;">Full cleaning and housekeeping services for companies
-                            and <br> households. <br> <br>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum
-                            has been the industry's standard dummy <br> text.Lorem Ipsum is simply</p>
-                    </div>
-                    <div class="button"><button><a href="#header">Read More</a></button> </div>
-                </div>
-                <div id="about_banner"></div>
-            </div>
-
-            <!--GALLERY SECTION-->
-
-            <div id="gallery">
-                <div id="gallery_data">
-                    <p
-                        style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                        Our Gallery</p>
-                    <p style="font-size: 19px; color: grey;">Lorem Ipsum is simply dummy text of printing typesetting
-                        ststry lorem Ipsum the industry'ndard dummy text ever since of the 1500s, when an <br>
-                        unknown printer took a galley of type and scra make a type specimen book. It has</p>
-                </div>
-                <div class="row">
-                    <div class="img"><img src="{% static 'images/10001a.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-
-                    </div>
-                    <div class="img"><img src="{% static 'images/10002a.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="img"><img src="{% static 'images/10006a.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="img"><img src="{% static 'images/10001.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="img"><img src="{% static 'images/10002.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="img"><img src="{% static 'images/10003.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="img"><img src="{% static 'images/10007a.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="img"><img src="{% static 'images/10004.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="img"><img src="{% static 'images/10005a.jpg' %}" alt="" height="300px" ; width="350px" ;>
-                        <div class="srrr">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="button"><button><a href="#header">See More</a></button> </div>
-            </div>
-
-            <!--SERVICE SECTION-->
-
-            <div id="services">
-
-                <div id="services_data">
-                    <div>
-                        <p
-                            style="font-size: 40px; font-weight: bold; color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                            Services</p>
-                        <p style="font-size: 19px; color: white;">Typesetting industry lorem Ipsum is simply dummy text
-                            of the</p>
-                    </div>
-                </div>
-                <div id="services_banner">
-                    <div class="box">
-
-                        <p><img src="{% static 'images/1000a' %}" alt=""></p>
-                        Original Coffee  
-                        <div style="font-size: 13px;">Exerci tation ullamcorper suscipit lobortis <br> nisl ut aliquip
-                            ex ea
-                        </div>
-                        <div class="buttonn"><button>read more</button></div>
-
-
-                    </div>
-                    <div class="box"> 
-                        <p><img src="images/icon2.png" alt=""></p>
-                        20 Coffee Flavors
-                        <div style="font-size: 13px;">Exerci tation ullamcorper suscipit lobortis <br> nisl ut aliquip
-                            ex ea
-                        </div>
-                        <div class="buttonn"><button>read more</button></div>
-
-                    </div>
-
-                    <div class="box">
-                        <p><img src="images/icon3.png" alt=""></p>
-                        Pleasant Abient
-                        <div style="font-size: 13px;">Exerci tation ullamcorper suscipit lobortis <br> nisl ut aliquip
-                            ex ea
-                        </div>
-                        <div class="buttonn"><button>read more</button></div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!--TESTIMONIAL DATA-->
-
-
-            <div id="testimonial">
-                <div id="testimonial_data1">
-                    <p
-                        style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                        Testimonial</p>
-                    <p style="font-size: 19px; color: rgb(107, 104, 104);">Eeven slightly believable. If you are going
-                        to use a passage of Lorem Ipsum, you need to</p>
-                    <p
-                        style="font-size: 25px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                        MONILA </p>
-                </div>
-                <div id="testimonial_data2">
-                    <p style="font-size: 19px; color: rgb(107, 105, 105);">
-                        many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                        in some form, by injected <br>
-                        humour, or randomised words which don't look even slightly believable. If you are going to use a
-                        passage of Lorem Ipsum, you <br>
-                        need to be sure there isn't anything embarrassing hidden in the middle of text. All themany
-                        variations of passages of Lorem Ipsum <br>
-                        available, but the majority have suffered alteration in some embarrassing hidden in the middle
-                        of text. All the
-                    </p>
-                </div>
-                <div id="slide_button">
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                </div>
-            </div>
-
-            <!--CONTECT US-->
-
-            <div id="contectus">
-                <div id="contect_data1">
-                    <p
-                        style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                        Contact Us</p>
-                </div>
-                <div>
-                    <div id="contect_data2">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Phone Number">
-                        <textarea name="text" id="" cols="30" rows="10" placeholder="Massage"></textarea>
-
-                        <div id="contect_button">SAVE</div>
-                    </div>
-
-                    <div id="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3733223.4919059603!2d78.42099679999998!3d23.970125000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694154133566!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-            </div>
-
-            <!--FOOTER PART-->
-
-            <div id="footer">
-                <div class="footer_box">
-                    <div class="headding">About</div>
-                    <p>consectetur adipiscing elit, sed do </p><br>
-                    <p>eiusmod tempor incididunt ut labore </p> <br>
-                    <p>et dolore magna aliqua. Ut enim ad </p><br>
-                    <p>minim veniam, quis nostrud </p><br>
-                    <p>exercitation u
-                    <p>
-
-                </div>
-                <div class="footer_box">
-                    <div class="headding">Menu</div>
-
-                    <p><a href="index.html">Home</a></p> <br>
-                    <p><a href="about.html">About</a></p> <br>
-                    <p><a href="gallery.html">Gallery</a> </p><br>
-                    <p><a href="services.html">Services</a> </p><br>
-                    <p><a href="contectus.html">Contect Us</a> </p><br>
-                    </p>
-                </div>
-                <div class="footer_box">
-                    <div class="headding">Useful Link</div>
-
-                    <p> Adipiscing </p><br>
-                    <p> Elit, sed do </p><br>
-                    <p> Eiusmod </p><br>
-                    <p> Tempor </p><br>
-                    <p> incididunt</p>
-                </div>
-                <div class="footer_box">
-                    <div class="headding">Contact Us</div>
-                    <div>
-                        <p>
-                            <img src="images/map-icon.png" alt="" height="15px"> Address : Loram Ipusm <br> <br>
-                            <img src="images/call-icon.png" alt="" height="15px"> Call : +01 1234567890 <br> <br>
-                            <img src="images/mail-icon.png" alt="" height="15px"> Email : demo@gmail.com <br> <br>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color:black">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>lawn and yard services
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">lawn and yard services</a>
     </div>
-</body>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>

@@ -28,6 +28,12 @@ body {
   overflow-x: hidden;
 }
 
+
+
+
+
+
+/* =========================================== */
 .clearfix {
   zoom: 1;
 }
@@ -195,10 +201,17 @@ p {
 }
 
 /* Main navi */
+
+.headerrr{
+  height: 70px;
+  z-index: 1000;
+
+}
 .main-nav {
   float: right;
   list-style: none;
   margin-top: 35px;
+  z-index: 1000;
 }
 
 .main-nav li {
@@ -325,9 +338,7 @@ input[type="submit"]:active {
 /* ------------------------------------------------------------------------- */
 /* about-us section styling */
 /* ------------------------------------------------------------------------- */
-.blank{
 
-}
 .section-about-us {
   background-color: #6d4c41;
   
@@ -1987,3 +1998,7 @@ template {
 [hidden] {
   display: none;
 }
+
+
+
+

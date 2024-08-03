@@ -19,6 +19,8 @@ def registerdata(request):
     # print(name,email,phone,password,re_password)
 
     Customer.objects.create(Name=name,Email=email,Contect=phone,Password=password,Re_Password=re_password)
+    return render(request, 'dashboard.html')
+
 
 def dashboard(request):
     return render(request, 'dashboard.html')

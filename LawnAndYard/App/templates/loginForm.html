@@ -4,7 +4,7 @@
 
 <div class="Logincontainer">
  <div class="wrapper">
-    <form action="{url 'dashboard'}" method="post">
+    <form action="{% url 'dashboard' %}" method="post">
         {% csrf_token %}
       <div id="wrapper">
         <!-- <div id="loginImg"><img src={rimg} style=width:30vw></div> -->

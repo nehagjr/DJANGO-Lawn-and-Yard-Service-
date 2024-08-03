@@ -1,11 +1,297 @@
+ <!-- https://lucerolnc.com/ -->
+  {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>grandcoffee</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <a href="{url 'dashboard'}"></a>
+    <div id="wrapper">
+        <!--This is header part-->
+        <div id="header">
+            <div id="toplogo">NW Yard</div>
+            <div id="topmenu">
+                <ul>
+                    <li><a href="#index" style="color: rgb(255, 140, 46)">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contectus">Contect Us</a></li>
+                    <img src="images/search-icon.png" alt="" height="22px">
+                </ul>
+            </div>
+        </div>
+
+        <!--HOME SECTION-->
+
+        <div id="banner">
+            <div id="banner_data">
+                
+                <div id="data2">
+                    <p
+                        style="font-size: 65px; color: white; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        Nw Yard Services</p>
+                </div>
+                <div>
+                    <p style="font-size: 20px; color: white;">coffee has played a far more important role in the world
+                        than most people <br>
+                        realize. Of course, it’s one of the most popular beverages in <br>
+                        disparate cultures around the globe. </p>
+                </div>
+                <div class="button"><button><a href="index.html">Learn More</a></button> </div>
+                <div id="arrow">
+                    <div class="aro"> < </div>
+                            <div class="aro"> > </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+            <!--ABOUT SECTION-->
+
+            <div id="about">
+                <div id="about_data">
+                    <div id="dataA">
+                        <p
+                            style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                            ABOUT US</p>
+                        <p style="font-size: 19px; color: grey;">Full cleaning and housekeeping services for companies
+                            and <br> households. <br> <br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum
+                            has been the industry's standard dummy <br> text.Lorem Ipsum is simply</p>
+                    </div>
+                    <div class="button"><button><a href="#header">Read More</a></button> </div>
+                </div>
+                <div id="about_banner"></div>
+            </div>
+
+            <!--GALLERY SECTION-->
+
+            <div id="gallery">
+                <div id="gallery_data">
+                    <p
+                        style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        Our Gallery</p>
+                    <p style="font-size: 19px; color: grey;">Lorem Ipsum is simply dummy text of printing typesetting
+                        ststry lorem Ipsum the industry'ndard dummy text ever since of the 1500s, when an <br>
+                        unknown printer took a galley of type and scra make a type specimen book. It has</p>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="{% static 'images/10001a.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                    <div class="img"><img src="{% static 'images/10002a.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="img"><img src="{% static 'images/10006a.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="{% static 'images/10001.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="img"><img src="{% static 'images/10002.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="img"><img src="{% static 'images/10003.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="{% static 'images/10007a.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="img"><img src="{% static 'images/10004.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="img"><img src="{% static 'images/10005a.jpg' %}" alt="" height="300px" ; width="350px" ;>
+                        <div class="srrr">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="button"><button><a href="#header">See More</a></button> </div>
+            </div>
+
+            <!--SERVICE SECTION-->
+
+            <div id="services">
+
+                <div id="services_data">
+                    <div>
+                        <p
+                            style="font-size: 40px; font-weight: bold; color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                            Services</p>
+                        <p style="font-size: 19px; color: white;">Typesetting industry lorem Ipsum is simply dummy text
+                            of the</p>
+                    </div>
+                </div>
+                <div id="services_banner">
+                    <div class="box">
+
+                        <p><img src="{% static 'images/1000a' %}" alt=""></p>
+                        Original Coffee  
+                        <div style="font-size: 13px;">Exerci tation ullamcorper suscipit lobortis <br> nisl ut aliquip
+                            ex ea
+                        </div>
+                        <div class="buttonn"><button>read more</button></div>
+
+
+                    </div>
+                    <div class="box"> 
+                        <p><img src="images/icon2.png" alt=""></p>
+                        20 Coffee Flavors
+                        <div style="font-size: 13px;">Exerci tation ullamcorper suscipit lobortis <br> nisl ut aliquip
+                            ex ea
+                        </div>
+                        <div class="buttonn"><button>read more</button></div>
+
+                    </div>
+
+                    <div class="box">
+                        <p><img src="images/icon3.png" alt=""></p>
+                        Pleasant Abient
+                        <div style="font-size: 13px;">Exerci tation ullamcorper suscipit lobortis <br> nisl ut aliquip
+                            ex ea
+                        </div>
+                        <div class="buttonn"><button>read more</button></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--TESTIMONIAL DATA-->
+
+
+            <div id="testimonial">
+                <div id="testimonial_data1">
+                    <p
+                        style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        Testimonial</p>
+                    <p style="font-size: 19px; color: rgb(107, 104, 104);">Eeven slightly believable. If you are going
+                        to use a passage of Lorem Ipsum, you need to</p>
+                    <p
+                        style="font-size: 25px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        MONILA </p>
+                </div>
+                <div id="testimonial_data2">
+                    <p style="font-size: 19px; color: rgb(107, 105, 105);">
+                        many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                        in some form, by injected <br>
+                        humour, or randomised words which don't look even slightly believable. If you are going to use a
+                        passage of Lorem Ipsum, you <br>
+                        need to be sure there isn't anything embarrassing hidden in the middle of text. All themany
+                        variations of passages of Lorem Ipsum <br>
+                        available, but the majority have suffered alteration in some embarrassing hidden in the middle
+                        of text. All the
+                    </p>
+                </div>
+                <div id="slide_button">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+            </div>
+
+            <!--CONTECT US-->
+
+            <div id="contectus">
+                <div id="contect_data1">
+                    <p
+                        style="font-size: 40px; font-weight: bold; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        Contact Us</p>
+                </div>
+                <div>
+                    <div id="contect_data2">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Phone Number">
+                        <textarea name="text" id="" cols="30" rows="10" placeholder="Massage"></textarea>
+
+                        <div id="contect_button">SAVE</div>
+                    </div>
+
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3733223.4919059603!2d78.42099679999998!3d23.970125000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694154133566!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--FOOTER PART-->
+
+            <div id="footer">
+                <div class="footer_box">
+                    <div class="headding">About</div>
+                    <p>consectetur adipiscing elit, sed do </p><br>
+                    <p>eiusmod tempor incididunt ut labore </p> <br>
+                    <p>et dolore magna aliqua. Ut enim ad </p><br>
+                    <p>minim veniam, quis nostrud </p><br>
+                    <p>exercitation u
+                    <p>
+
+                </div>
+                <div class="footer_box">
+                    <div class="headding">Menu</div>
+
+                    <p><a href="index.html">Home</a></p> <br>
+                    <p><a href="about.html">About</a></p> <br>
+                    <p><a href="gallery.html">Gallery</a> </p><br>
+                    <p><a href="services.html">Services</a> </p><br>
+                    <p><a href="contectus.html">Contect Us</a> </p><br>
+                    </p>
+                </div>
+                <div class="footer_box">
+                    <div class="headding">Useful Link</div>
+
+                    <p> Adipiscing </p><br>
+                    <p> Elit, sed do </p><br>
+                    <p> Eiusmod </p><br>
+                    <p> Tempor </p><br>
+                    <p> incididunt</p>
+                </div>
+                <div class="footer_box">
+                    <div class="headding">Contact Us</div>
+                    <div>
+                        <p>
+                            <img src="images/map-icon.png" alt="" height="15px"> Address : Loram Ipusm <br> <br>
+                            <img src="images/call-icon.png" alt="" height="15px"> Call : +01 1234567890 <br> <br>
+                            <img src="images/mail-icon.png" alt="" height="15px"> Email : demo@gmail.com <br> <br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+    </div>
 </body>
+
 </html>
